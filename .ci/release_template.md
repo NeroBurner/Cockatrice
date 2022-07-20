@@ -8,7 +8,9 @@ git push -d origin --REPLACE-WITH-BETA-LIST--
 include different targets -->
 <pre>
 <b>Pre-compiled binaries we serve:</b>
- - <kbd>Windows 7+ (32/64-bit)</kbd>
+ - <kbd>Windows 7+ (32-bit)</kbd>
+ - <kbd>Windows 7+ (64-bit)</kbd>
+ - <kbd>Windows 10+ (64-bit)</kbd>
  - <kbd>macOS 10.15+</kbd> ("Catalina")
  - <kbd>Ubuntu 18.04</kbd> ("Bionic Beaver")
  - <kbd>Ubuntu 20.04</kbd> ("Focal Fossa")
