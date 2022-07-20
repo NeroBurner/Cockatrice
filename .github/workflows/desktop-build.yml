@@ -279,24 +279,28 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          # https://www.qt.io/blog/qt6-development-hosts-and-targets
+          # 32-bit builds are no longer available with Qt6
           - target: Win-32bit
             arch: 32
             vcpkg_default_triplet: x86
-            qt_version: '5.15.2'
+            qt_version: '5.15.10'
             cmake_generator_platform: Win32
             qt_arch: msvc2019
 
+          # https://www.qt.io/blog/qt6-development-hosts-and-targets
+          # Win 7/8 support no longer available with Qt6 (EOL versions got dropped)
           - target: Win7+-64bit
             arch: 64
             vcpkg_default_triplet: x64
-            qt_version: '5.15.2'
+            qt_version: '5.15.10'
             cmake_generator_platform: x64
             qt_arch: msvc2019_64
 
           - target: Win10+-64bit
             arch: 64
             vcpkg_default_triplet: x64
-            qt_version: '6.3.0'
+            qt_version: '6.3.1'
             cmake_generator_platform: x64
             qt_arch: msvc2019_64
             qt_modules: "qt5compat qtmultimedia qtwebsockets"
