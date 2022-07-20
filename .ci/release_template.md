@@ -8,11 +8,10 @@ git push -d origin --REPLACE-WITH-BETA-LIST--
 include different targets -->
 <pre>
 <b>Pre-compiled binaries we serve:</b>
- - <kbd>Windows 7/8/10/11 (32-bit)</kbd>
+ - <kbd>Windows 7+ (32-bit)</kbd>
  - <kbd>Windows 7/8 (64-bit)</kbd>
- - <kbd>Windows 10/11 (64-bit)</kbd>
+ - <kbd>Windows 10+ (64-bit)</kbd>
  - <kbd>macOS 10.15+</kbd> ("Catalina")
- - <kbd>macOS 11.0+</kbd> ("Big Sur")
  - <kbd>Ubuntu 18.04</kbd> ("Bionic Beaver")
  - <kbd>Ubuntu 20.04</kbd> ("Focal Fossa")
  - <kbd>Ubuntu 21.10</kbd> ("Impish Indri")
