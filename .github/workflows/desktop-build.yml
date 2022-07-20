@@ -305,7 +305,7 @@ jobs:
             qt_arch: msvc2019_64
             qt_modules: "qt5compat qtmultimedia qtwebsockets"
 
-    name: ${{matrix.target}}
+    name: Windows (${{matrix.arch}}-bit, Qt ${{matrix.qt_version}})
     needs: configure
     runs-on: windows-2019
     env:
@@ -328,7 +328,7 @@ jobs:
           key: QtCache-${{matrix.qt_version}}-${{matrix.target}}
           path: '${{github.workspace}}/../Qt'
 
-      - name: Install Qt ${{matrix.qt_version}} for ${{matrix.target}}
+      - name: Install Qt ${{matrix.qt_version}} (${{matrix.qt_arch}})
         uses: jurplel/install-qt-action@v3
         with:
           cached: ${{steps.cache-qt.outputs.cache-hit}}
